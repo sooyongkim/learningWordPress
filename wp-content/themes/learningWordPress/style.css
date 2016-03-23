@@ -1,0 +1,112 @@
+/*
+Theme Name: learnigWordPress
+Theme URI: https://wordpress.org/themes/twentysixteen/
+Author: the WordPress team
+Author URI: https://wordpress.org/
+Description: Twenty Sixteen is a modernized take on an ever-popular WordPress layout — the horizontal masthead with an optional right sidebar that works perfectly for blogs and websites. It has custom color options with beautiful default color schemes, a harmonious fluid grid using a mobile-first approach, and impeccable polish in every detail. Twenty Sixteen will make your WordPress look beautiful everywhere.
+Version: 1.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, blue, gray, red, white, yellow, dark, light, one-column, two-columns, right-sidebar, fixed-layout, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+Text Domain: twentysixteen
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+body{
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	color: #333;
+}
+
+a:link,
+a:visited{
+	color: #006ec3;
+}
+p{
+	line-height: 1.65em;
+}
+
+/* General layout */
+div.container{
+	max-width: 920px;
+	margin: 0 auto;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/* Header */
+.site-header{
+	border-bottom: 2px solid #999;
+}
+/* Footer */
+.site-footer{
+	margin-top: 20px;
+	border-top: 2px solid #999;	
+}
+
+article.post{
+	border-bottom: 2px dotted #dddddd;
+}
+
+article.post:last-of-type{
+	border-bottom: none;
+}
+
+/* Navigation Menus */
+
+.site-nav ul{
+	margin: 0;
+	padding: 0;
+	*zoom: 1;
+}
+.site-nav ul:before, 
+.site-nav ul:after{
+	content:"";
+	display: table;
+}
+.site-nav ul:after{
+	clear: both;
+}
+.site-nav ul li{
+	list-style: none;
+	float: left;
+}
+
+/* Site Header Menu */
+
+.site-header nav ul li{
+	margin-right: 5px; 
+}
+
+.site-header nav ul li a{
+	display: block;
+	padding: 10px 18px;
+	border: 1px solid #BBB;
+	border-bottom: none;
+	text-decoration: none;
+}
+
+.site-header nav ul li a:hover{
+	background-color: #ECECEC;
+}
+.site-header nav ul li.current-menu-item a:link,
+.site-header nav ul li.current-menu-item a:visited{
+	background-color: #006ec3;
+	color: #FFF;
+}
+/* Footer Menu */
+.site-footer nav ul li a{
+	text-decoration: none;
+}
+.site-footer nav ul li{
+	margin-right: 10px;
+	padding-right: 10px;
+	border-right: 1px dotted #BBB;
+}
+
+/* Post Page */
+article.page h2{
+	font-size: 300%;
+}
